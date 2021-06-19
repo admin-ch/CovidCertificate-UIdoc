@@ -29,3 +29,14 @@ In order to put your data in a csv, we recommend to use Excel. You can follow th
 4. You can open the csv file with a text editor in order to check that everything is ok.
 
 ## Hints for filling the csv file
+
+### For all certificates
+
+1. The dates have to be in the format YYYY-MM-DD like 2021-11-23
+
+### For vaccination certificates
+
+1. The medicinalProductCode has to be one one of the following code:
+   - EU/1/20/1528: for the Comirnaty vaccine from BioNTech Manufacturing GmbH
+   - EU/1/20/1507: for the COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.
+   - EU/1/20/152: for the COVID-19 Vaccine Janssen from Janssen-Cilag International NV
