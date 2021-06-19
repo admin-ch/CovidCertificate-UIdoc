@@ -1,6 +1,6 @@
 # Web Management UI documentation
 
-Documentation for the Web Management UI
+Documentation for the Web management UI ([prod](https://www.covidcertificate.admin.ch/) - [test](https://www.covidcertificate-a.admin.ch/))
 
 # HOWTO create csv files for the csv upload function ?
 
