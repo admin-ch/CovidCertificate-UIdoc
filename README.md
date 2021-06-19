@@ -19,6 +19,8 @@ The content of the csv is exactly the content needed by the API. Use the [API do
 
 The csv separator is ;. It means that you can't use the ; in the columns of the csv file.
 
+The two supported file format encodings are UTF-8 (prefferred) and Windows-1252
+
 ## Create a csv with excel
 
 In order to put your data in a csv, we recommend to use Excel. You can follow the following steps:
