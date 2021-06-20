@@ -21,7 +21,7 @@ The csv separator is ;. It means that you can't use the ; in the data of the csv
 
 The two supported file format encodings are UTF-8 and Windows-1252.
 
-If the input csv file can't be processed, then an error file willbe send back and no data will be processed. In order to create or print covid certificates, you need to upload a csv file without error.
+If the input csv file can't be processed, then an error file willbe sent back and no data will be processed (in other words, no covid certificates is produced or printed). In order to create or print covid certificates, you need to upload a csv file without error. In this case, you get back a zip with all produced covid certificates.
 
 ## Create a csv with excel
 
