@@ -17,7 +17,7 @@ If you add [address information](https://github.com/admin-ch/CovidCertificate-Ap
 
 The content of the csv is exactly the content needed by the API. Use the [API documentation](https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data) to be able to select appropriate values for the various fields of the csv file.
 
-The csv separator is ;. It means that you can't use the ; in the columns of the csv file.
+The csv separator is ;. It means that you can't use the ; in the data of the csv file.
 
 The two supported file format encodings are UTF-8 (prefferred) and Windows-1252
 
