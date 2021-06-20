@@ -19,7 +19,9 @@ The content of the csv is exactly the content needed by the API. Use the [API do
 
 The csv separator is ;. It means that you can't use the ; in the data of the csv file.
 
-The two supported file format encodings are UTF-8 (prefferred) and Windows-1252
+The two supported file format encodings are UTF-8 and Windows-1252.
+
+If the input csv file can't be processed, then an error file willbe send back and no data will be processed. In order to create or print covid certificates, you need to upload a csv file without error.
 
 ## Create a csv with excel
 
