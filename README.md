@@ -23,6 +23,8 @@ The two supported file format encodings are UTF-8 and Windows-1252.
 
 If the input csv file can't be processed, then an error file willbe sent back and no data will be processed (in other words, no covid certificates is produced or printed). In order to create or print covid certificates, you need to upload a csv file without error. In this case, you get back a zip with all produced covid certificates.
 
+The csv file supports until 100 entries. If you have more data, we recommend to script the process with the [API](https://github.com/admin-ch/CovidCertificate-Api-Scripts).
+
 ## Create a csv with excel
 
 In order to put your data in a csv, we recommend to use Excel. You can follow the following steps:
