@@ -13,7 +13,9 @@ The csv upload function allows you to create several certificates by importing a
 - test
 - recovery
 
-If you add [address information](https://github.com/admin-ch/CovidCertificate-Apidoc#address-data) in the csv file (only for vaccination and recovery certificates), then the files will be printed and sent per post directly to the certificate owner. 
+If you add [address information](https://github.com/admin-ch/CovidCertificate-Apidoc#address-data) in the csv file (only for vaccination and recovery certificates), then the files will be printed and sent per post directly to the certificate owner.
+
+If you add a transfer code in a column "inAppDeliveryCode", then the certificate will be transferred directly to the Covid Cert app with the InApp delivery function.
 
 The content of the csv is exactly the content needed by the API. Use the [API documentation](https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data) to be able to select appropriate values for the various fields of the csv file.
 
