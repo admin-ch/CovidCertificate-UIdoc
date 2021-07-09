@@ -21,7 +21,7 @@ The content of the csv is exactly the content needed by the API. Use the [API do
 
 The csv separator is ;. It means that you can't use the ; in the data of the csv file.
 
-The two supported file format encodings are UTF-8 and Windows-1252. For a csv export with Windows operating system, please use "CSV (Trennzeichen-getrennt)" as export format.
+The two supported file format encodings are UTF-8 and Windows-1252 (UTF-8 BOM is not supported). For a csv export with Windows operating system, please use "CSV (Trennzeichen-getrennt)" as export format.
 
 If the input csv file can't be processed, then an error file willbe sent back and no data will be processed (in other words, no covid certificates is produced or printed). In order to create or print covid certificates, you need to upload a csv file without error. In this case, you get back a zip with all produced covid certificates.
 
