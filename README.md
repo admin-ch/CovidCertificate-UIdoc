@@ -1,50 +1,129 @@
 # Web Management UI documentation
+Documentation for the Web management UI ([prod](
+https://www.covidcertificate.admin.ch/
+) - [test](
+https://www.covidcertificate-a.admin.ch/
+))
 
-Documentation for the Web management UI ([prod](https://www.covidcertificate.admin.ch/) - [test](https://www.covidcertificate-a.admin.ch/))
+# Table of contents
+- [Web Management UI documentation](#web-management-ui-documentation)
+- [How to generate multiple COVID certificates ?](#how-to-generate-multiple-covid-certificates--)
+  * [General informations](#general-informations)
+  * [Certificate types](#certificate-types)
+  * [Delivery methods](#delivery-methods)
+  * [Templates](#templates)
+  * [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
+    + [Supported date format](#supported-date-format)
+    + [Supported separator](#supported-separator)
+    + [Supported encoding](#supported-encoding)
+    + [Supported vaccine (vaccination certificate)](#supported-vaccine--vaccination-certificate-)
+- [Troubleshooting](#troubleshooting)
 
-# HOWTO create csv files for the csv upload function ?
+# How to generate multiple COVID certificates ?
+## General informations
 
-## General information
+The **Generate multiple certificates** function allows you to create and deliver several certificates by importing a CSV file. The import file can be produced using one of the available [templates](#templates).
 
-The csv upload function allows you to create several certificates by importing a csv file. 
+⚠️ The CSV file supports until 100 entries and can't exceed a size of 40kB. If you have more data, we recommend to script the process with the [API](
+https://github.com/admin-ch/CovidCertificate-Api-Scripts
+).
 
-3 types of certificates can be created:
+## Certificate types
+Three (3) types of certificate can be created:
 - vaccination
 - test
 - recovery
 
-If you add [address information](https://github.com/admin-ch/CovidCertificate-Apidoc#address-data) in the csv file (only for vaccination and recovery certificates), then the files will be printed and sent per post directly to the certificate owner.
+## Delivery methods
+Three (3) types of delivery method can be used:
+- sent per post
+  - **only** available for **vaccination certificates**
+  - the certificates will be printed and sent per post
+    - the patient [address](
+      https://github.com/admin-ch/CovidCertificate-Apidoc#address-data
+      ) is required
+    - only available for addresses in Switzerland
+  - certificates in PDF format will be compressed in a ZIP file and downloaded
+- transfer to the mobile app
+  - available for all certificate types
+  - the certificate is delivered directly in the mobile application (minimum v. 2.2.0) of the patient
+  - the patient has to provide an app transfer code
+    - *inAppDeliveryCode* can be generated in the mobile application (min. v. 2.2.0)
+    - app tranfer code expire 7 days after generation of the code
+    - only one certificate is delivered per app transfer code
+  - certificates in PDF format will be compressed in a ZIP file and downloaded
+- PDFs only
+  - available for all certificate types
+  - certificates in PDF format will be compressed in a ZIP file and downloaded
 
-If you add a transfer code in a column "inAppDeliveryCode", then the certificate will be transferred directly to the Covid Cert app with the InApp delivery function.
+The specifications regarding the field values of the CSV are the same as for the API. Use the [API documentation](
+https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
+) to choose the appropriate values sets for the fields of the CSV.
 
-The content of the csv is exactly the content needed by the API. Use the [API documentation](https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data) to be able to select appropriate values for the various fields of the csv file.
+## Templates
+<table>
+ <tr>
+  <td>&nbsp;</td>
+  <td>&nbsp;post</td>
+  <td>&nbsp;appTransfer</td>
+  <td>&nbsp;ZIP only</td>
+ </tr>
+ <tr>
+  <td>&nbsp;vaccination</td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_post.xlsx">template-cc_vaccination-delivery_post</a></td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
+ </tr>
+ <tr>
+   <td>&nbsp;test</td>
+  <td>&nbsp;not available</td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test-delivery_appTransfer.xlsx">template-cc_test-delivery_appTransfer</a></td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test.xlsx">template-cc_test</a></td>
+ </tr>
+ <tr>
+   <td>&nbsp;recovery</td>
+  <td>&nbsp;not available</td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
+ </tr>
+</table>
 
-The csv separator is ;. It means that you can't use the ; in the data of the csv file.
+## Create a CSV with Microsoft Excel
 
-The two supported file format encodings are UTF-8 and Windows-1252 (UTF-8 BOM is not supported). For a csv export with Windows operating system, please use "CSV (Trennzeichen-getrennt)" as export format.
+We recommend Microsoft Excel to edit the template.
+1. Open the template with Microsoft Excel.
+2. Fill the cells under the titled column with the respectives informations of your patients.
+3. Generate the CSV:
+  - Windows: ***File*** -> ***Save As*** -> ***Browse*** -> ***Save as type: CSV (Comma delimited)***
+  - Mac: ***File*** -> ***Save As...*** -> ***File Format: CSV UTF-8 (Comma-delimited (.csv)***
 
-If the input csv file can't be processed, then an error file willbe sent back and no data will be processed (in other words, no covid certificates is produced or printed). In order to create or print covid certificates, you need to upload a csv file without error. In this case, you get back a zip with all produced covid certificates.
+⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
-The csv file supports until 100 entries. If you have more data, we recommend to script the process with the [API](https://github.com/admin-ch/CovidCertificate-Api-Scripts).
+### Supported date format
+- yyyy-MM-dd (e.g. 2021-06-17)
+- dd.MM.yyyy (e.g. 17.06.2021)
 
-## Create a csv with excel
+### Supported separator
+- SEMI-COLON: ';'
+- COMMA: ','
+- TAB: '  '
 
-In order to put your data in a csv, we recommend to use Excel. You can follow the following steps:
+⚠️ When a character is used as a separator, the same character cannot be used in the field values.
 
-1. Open one of the available excel template for [vaccination certificates](https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template_vaccination.xlsx), [recovery certificates](https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template_recovery.xlsx) or [test certificates](https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template_test.xlsx)
-2. Enter your data in the appropriate sheet. Information about format and valuesets can be found in the [API documentation](https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data)
-3. In order to create a csv file, use the "File Save As" function and select the "csv" file type. Excel informs you that only one sheet can be exported since the csv format doesn't support several sheets.
-4. You can open the csv file with a text editor in order to check that everything is ok.
+### Supported encoding
+- UTF-8
+- Windows-1252
+- UTF-8 BOM (Apple)
 
-## Hints for filling the csv file
+### Supported vaccine (vaccination certificate)
+The *medicinalProductCode* has to be one one of the following code:
 
-### For all certificates
+| description                                                  | code         |
+|--------------------------------------------------------------|--------------|
+| Comirnaty vaccine from BioNTech Manufacturing GmbH           | **EU/1/20/1528** |
+| COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.    | **EU/1/20/1507** |
+| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/152**  |
 
-- The dates have to be in the format YYYY-MM-DD like 2021-11-23
-
-### For vaccination certificates
-
-- The medicinalProductCode has to be one one of the following code:
-   - EU/1/20/1528: for the Comirnaty vaccine from BioNTech Manufacturing GmbH
-   - EU/1/20/1507: for the COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.
-   - EU/1/20/152: for the COVID-19 Vaccine Janssen from Janssen-Cilag International NV
+# Troubleshooting
+If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
+In this case, fix the errors in the CSV file according to the error description in the returned file.
