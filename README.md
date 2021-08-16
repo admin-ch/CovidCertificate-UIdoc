@@ -66,7 +66,7 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
   <td>&nbsp;</td>
   <td>&nbsp;post</td>
   <td>&nbsp;appTransfer</td>
-  <td>&nbsp;ZIP only</td>
+  <td>&nbsp;PDF only</td>
  </tr>
  <tr>
   <td>&nbsp;vaccination</td>
