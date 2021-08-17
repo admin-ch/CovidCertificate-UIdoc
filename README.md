@@ -37,7 +37,7 @@ Three (3) types of certificate can be created:
 ## Delivery methods
 Three (3) types of delivery method can be used:
 - sent per post
-  - **only** available for **vaccination certificates**
+  - **only** available for **vaccination certificates** and **recovery certificates**
   - the certificates will be printed and sent per post
     - the patient [address](
       https://github.com/admin-ch/CovidCertificate-Apidoc#address-data
@@ -52,7 +52,7 @@ Three (3) types of delivery method can be used:
     - app tranfer code expire 7 days after generation of the code
     - only one certificate is delivered per app transfer code
   - certificates in PDF format will be compressed in a ZIP file and downloaded
-- PDFs only
+- PDF only
   - available for all certificate types
   - certificates in PDF format will be compressed in a ZIP file and downloaded
 
@@ -82,7 +82,7 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
  </tr>
  <tr>
    <td>&nbsp;recovery</td>
-  <td>&nbsp;not available</td>
+  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
   <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
   <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
  </tr>
@@ -100,20 +100,9 @@ We recommend Microsoft Excel to edit the template.
 ⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
 ### Supported date format
+It is not possible to mix formats, only one of the following formats must be used in a document:
 - yyyy-MM-dd (e.g. 2021-06-17)
 - dd.MM.yyyy (e.g. 17.06.2021)
-
-### Supported separator
-- SEMI-COLON: ';'
-- COMMA: ','
-- TAB: '  '
-
-⚠️ When a character is used as a separator, the same character cannot be used in the field values.
-
-### Supported encoding
-- UTF-8
-- Windows-1252
-- UTF-8 BOM (Apple)
 
 ### Supported vaccine (vaccination certificate)
 The *medicinalProductCode* has to be one one of the following code:
