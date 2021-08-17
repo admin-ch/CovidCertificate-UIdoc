@@ -92,8 +92,8 @@ We recommend Microsoft Excel to edit the template.
 1. Open the template with Microsoft Excel.
 2. Fill the cells under the titled column with the respectives informations of your patients.
 3. Generate the CSV:
-  - Windows: ***File*** -> ***Save As*** -> ***Browse*** -> ***Save as type: CSV (Comma delimited)***
-  - Mac: ***File*** -> ***Save As...*** -> ***File Format: CSV UTF-8 (Comma-delimited (.csv)***
+ - Windows: ***File*** -> ***Save As*** -> ***Browse*** -> ***Save as type: CSV (Comma delimited)***
+ - Mac: ***File*** -> ***Save As...*** -> ***File Format: CSV UTF-8 (Comma-delimited (.csv)***
 
 ⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
