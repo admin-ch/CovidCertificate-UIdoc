@@ -109,7 +109,7 @@ The *medicinalProductCode* has to be one one of the following code:
 |--------------------------------------------------------------|--------------|
 | Comirnaty vaccine from BioNTech Manufacturing GmbH           | **EU/1/20/1528** |
 | COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.    | **EU/1/20/1507** |
-| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/152**  |
+| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/1525**  |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
