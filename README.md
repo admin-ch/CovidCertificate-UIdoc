@@ -105,7 +105,7 @@ It is not possible to mix formats, only one of the following formats must be use
 ### Supported vaccine (vaccination certificate)
 The *medicinalProductCode* has to be one one of the following code:
 
-| description                                                  | code         |
+| description                                                  | medicinalProductCode         |
 |--------------------------------------------------------------|--------------|
 | Comirnaty vaccine from BioNTech Manufacturing GmbH           | **EU/1/20/1528** |
 | COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.    | **EU/1/20/1507** |
