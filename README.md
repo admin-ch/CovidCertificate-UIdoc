@@ -97,10 +97,17 @@ We recommend Microsoft Excel to edit the template.
 
 ⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
-### Supported date format
+### Supported date format for all dates
 It is not possible to mix formats, only one of the following formats must be used in a document:
 - yyyy-MM-dd (e.g. 2021-06-17)
 - dd.MM.yyyy (e.g. 17.06.2021)
+
+### Supported date format for bithdates only
+It is not possible to mix formats, only one of the following formats must be used in a document:
+- yyyy-MM-dd (e.g. 2021-06-17)
+- dd.MM.yyyy (e.g. 17.06.2021)
+- yyyy-MM (e.g. 2021-09)
+- yyyy (e.g. 2021)
 
 ### Supported vaccine (vaccination certificate)
 The *medicinalProductCode* has to be one one of the following code:
@@ -109,7 +116,10 @@ The *medicinalProductCode* has to be one one of the following code:
 |--------------------------------------------------------------|--------------|
 | Comirnaty vaccine from BioNTech Manufacturing GmbH           | **EU/1/20/1528** |
 | COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.    | **EU/1/20/1507** |
-| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/1525**  |
+| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/1525** |
+
+### Supported rapid antigen tests
+The application supports a dedicated list of rapid antigen tests. Those can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
