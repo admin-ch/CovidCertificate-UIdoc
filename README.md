@@ -102,7 +102,7 @@ It is not possible to mix formats, only one of the following formats must be use
 - yyyy-MM-dd (e.g. 2021-06-17)
 - dd.MM.yyyy (e.g. 17.06.2021)
 
-### Supported date format for bithdates only
+### Supported date format for birthdates only
 It is not possible to mix formats, only one of the following formats must be used in a document:
 - yyyy-MM-dd (e.g. 2021-06-17)
 - dd.MM.yyyy (e.g. 17.06.2021)
