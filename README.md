@@ -13,7 +13,7 @@ https://www.covidcertificate-a.admin.ch/
   * [Delivery methods](#delivery-methods)
   * [Templates](#templates)
   * [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
-    + [Supported date format](#supported-date-format)
+    + [Supported date format](#supported-date-format-for-all-dates)
     + [Supported vaccine (vaccination certificate)](#supported-vaccine-vaccination-certificate)
 - [Troubleshooting](#troubleshooting)
 
