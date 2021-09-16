@@ -120,7 +120,7 @@ The *medicinalProductCode* has to be one one of the following code:
 | COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/1525** |
 
 ### Supported rapid antigen tests
-The application supports a dedicated list of rapid antigen tests. Those can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
+The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
