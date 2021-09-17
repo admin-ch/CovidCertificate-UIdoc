@@ -7,7 +7,7 @@ https://www.covidcertificate-a.admin.ch/
 
 # Table of contents
 - [Web Management UI documentation](#web-management-ui-documentation)
-- [How to generate multiple COVID certificates ?](#how-to-generate-multiple-covid-certificates--)
+- [How to generate multiple COVID certificates ?](#how-to-generate-multiple-covid-certificates)
   * [General informations](#general-informations)
   * [Certificate types](#certificate-types)
   * [Delivery methods](#delivery-methods)
