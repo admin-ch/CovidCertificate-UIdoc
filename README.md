@@ -113,12 +113,12 @@ It is not possible to mix formats, only one of the following formats must be use
 ### Supported vaccine (vaccination certificate)
 The *medicinalProductCode* has to be one one of the following code:
 
-| description                                                  | medicinalProductCode         |
+| description (productName / productManufacturer)                                                  | medicinalProductCode         |
 |--------------------------------------------------------------|--------------|
-| Comirnaty vaccine from BioNTech Manufacturing GmbH           | **EU/1/20/1528** |
-| COVID-19 Vaccine Moderna from Moderna Biotech Spain, S.L.    | **EU/1/20/1507** |
-| COVID-19 Vaccine Janssen from Janssen-Cilag International NV | **EU/1/20/1525** |
-
+| Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** | 
+| COVID-19 Vaccine Janssen / Janssen-Cilag International    | **EU/1/20/1525** |
+| Comirnaty / Biontech Manufacturing GmbH | **EU/1/20/1528** |
+| Vaxzevria (previously COVID-19 Vaccine AstraZeneca) / AstraZeneca AB | **EU/1/21/1529** |
 ### Supported rapid antigen tests
 The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
