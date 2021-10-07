@@ -118,9 +118,12 @@ The *medicinalProductCode* has to be one one of the following code:
 | Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** | 
 | COVID-19 Vaccine Janssen / Janssen-Cilag International    | **EU/1/20/1525** |
 | Comirnaty / Biontech Manufacturing GmbH | **EU/1/20/1528** |
-| Vaxzevria (previously COVID-19 Vaccine AstraZeneca) / AstraZeneca AB | **EU/1/21/1529** |
+
 ### Supported rapid antigen tests
 The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
+
+### Supported country
+For the generation of vaccine certificates and recovery certificates only Switzerland (**CH**) can be used for **countryOfVaccination** respectively **countryOfTest**. For negative-test certificates, there are no restrictions on the country of test **countryOfTest**. The accepted values are those proposed by the standard **ISO 3166-1 alpha 2**.
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
