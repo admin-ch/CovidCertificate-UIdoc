@@ -13,9 +13,11 @@ https://www.covidcertificate-a.admin.ch/
   * [Delivery methods](#delivery-methods)
   * [Templates](#templates)
   * [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
-    + [Supported date format](#supported-date-format-for-all-dates)
+    + [Supported date format for all dates](#supported-date-format-for-all-dates)
+    + [Supported date format for birthdates only](#supported-date-format-for-birthdates-only)
     + [Supported vaccine (vaccination certificate)](#supported-vaccine-vaccination-certificate)
     + [Supported rapid antigen tests (test certificate)](#supported-rapid-antigen-tests)
+    + [Supported country](#supported-country)
 - [Troubleshooting](#troubleshooting)
 
 # How to generate multiple COVID certificates ?
