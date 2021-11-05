@@ -30,15 +30,16 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Three (3) types of certificate can be created:
+Four (4) types of certificate can be created:
 - vaccination
 - test
 - recovery
+- antibody
 
 ## Delivery methods
 Three (3) types of delivery method can be used:
 - sent per post
-  - **only** available for **vaccination certificates** and **recovery certificates**
+  - **only** available for **vaccination certificates**, **recovery certificates** and  **antibody certificates**
   - the certificates will be printed and sent per post
     - the patient [address](
       https://github.com/admin-ch/CovidCertificate-Apidoc#address-data
@@ -63,30 +64,38 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 
 ## Templates
 <table>
- <tr>
-  <td>&nbsp;</td>
-  <td>&nbsp;post</td>
-  <td>&nbsp;appTransfer</td>
-  <td>&nbsp;PDF only</td>
- </tr>
- <tr>
-  <td>&nbsp;vaccination</td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_post.xlsx">template-cc_vaccination-delivery_post</a></td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
- </tr>
- <tr>
-   <td>&nbsp;test</td>
-  <td>&nbsp;not available</td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test-delivery_appTransfer.xlsx">template-cc_test-delivery_appTransfer</a></td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test.xlsx">template-cc_test</a></td>
- </tr>
- <tr>
-   <td>&nbsp;recovery</td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
-  <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
- </tr>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;post</td>
+<td>&nbsp;appTransfer</td>
+<td>&nbsp;PDF only</td>
+</tr>
+<tr>
+<td>&nbsp;vaccination</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_post.xlsx">template-cc_vaccination-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
+</tr>
+<tr>
+<td>&nbsp;test</td>
+<td>&nbsp;not available</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test-delivery_appTransfer.xlsx">template-cc_test-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_test.xlsx">template-cc_test</a></td>
+</tr>
+<tr>
+<td>&nbsp;recovery</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
+</tr>
+<tr>
+<td>&nbsp;antibody</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody.xlsx">template-cc_antibody</a></td>
+</tr>
+</tbody>
 </table>
 
 ## Create a CSV with Microsoft Excel
@@ -126,6 +135,8 @@ The application supports a dedicated list of rapid antigen tests. **manufacturer
 
 ### Supported country
 For the generation of vaccine certificates and recovery certificates only Switzerland (**CH**) can be used for **countryOfVaccination** respectively **countryOfTest**. For negative-test certificates, there are no restrictions on the country of test **countryOfTest**. The accepted values are those proposed by the standard **ISO 3166-1 alpha 2**.
+
+For the generation of antibody certificates, the country can't be choosed, since this certificate is only valid in Switzerland (not yet part of the EU-DigitalCovidCertificate).
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
