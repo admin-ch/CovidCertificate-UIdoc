@@ -30,8 +30,9 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Four (4) types of certificate can be created:
+Five (5) types of certificate can be created:
 - vaccination
+- vaccination-tourist
 - test
 - recovery
 - antibody
@@ -74,6 +75,12 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <tr>
 <td>&nbsp;vaccination</td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_post.xlsx">template-cc_vaccination-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
+</tr>
+  <tr>
+<td>&nbsp;vaccination-tourist</td>
+<td>&nbsp;not available</td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
 </tr>
