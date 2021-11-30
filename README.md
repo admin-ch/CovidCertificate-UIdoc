@@ -118,7 +118,7 @@ We recommend Microsoft Excel to edit the template.
 ⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
 ### Supported encoding for familyName and givenName
-UTF-8 | ISO-8859-1 is used for the familyName and givenName except the following characters:
+UTF-8 | ISO-8859-1 is used for the familyName and givenName except the following characters:  
 "!", "@", "#", "$", "%", "¶", "*", "(", ")", "_", ":", "/", "+", "=", "|", "<", ">", "?", "{", "}", "[", "]", "~"
 
 ### Supported date format for all dates
