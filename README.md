@@ -116,6 +116,10 @@ We recommend Microsoft Excel to edit the template.
 
 ⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
 
+### Supported encoding for familyName and givenName
+UTF-8 | ISO-8859-1 is used for the familyName and givenName except the following characters:
+
+
 ### Supported date format for all dates
 It is not possible to mix formats, only one of the following formats must be used in a document:
 - yyyy-MM-dd (e.g. 2021-06-17)
@@ -130,20 +134,37 @@ It is not possible to mix formats, only one of the following formats must be use
 
 ### Supported vaccine (vaccination certificate)
 The *medicinalProductCode* has to be one one of the following code:
-
+#### Vaccination certificate
 | description (productName / productManufacturer)                                                  | medicinalProductCode         |
 |--------------------------------------------------------------|--------------|
-| Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** | 
-| COVID-19 Vaccine Janssen / Janssen-Cilag International    | **EU/1/20/1525** |
+| BBIBP-CorV (Vero Cells) / China Sinopharm International Corp. - Beijing location           | **BBIBP-CorV** |
 | Comirnaty / Biontech Manufacturing GmbH | **EU/1/20/1528** |
+| Covaxin (also known as BBV152 A, B, C) / Bharat Biotech | **Covaxin** |
+| COVID-19 Vaccine Janssen / Janssen-Cilag International    | **EU/1/20/1525** |
+| COVID-19 Vaccine (Vero Cell), Inactivated/ Coronavac / Sinovac Biotech    | **CoronaVac** |
+| other AstraZeneca vaccines: COVISHIELD / AZD1222 / ChAdOx1 nCoV-19/ChAdOx1-S/… / Serum Institute Of India Private Limited    | **Covishield** |
+| Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** |
+| Vaxzevria / AstraZeneca AB          | **EU/1/21/1529** |
+
+#### Vaccination-tourist certificate
+| description (productName / productManufacturer)                                                  | medicinalProductCode         |
+|--------------------------------------------------------------|--------------|
+| BBIBP-CorV (Vero Cells) / China Sinopharm International Corp. - Beijing location           | **BBIBP-CorV** |
+| Covaxin (also known as BBV152 A, B, C) / Bharat Biotech | **Covaxin** |
+| COVID-19 Vaccine (Vero Cell), Inactivated/ Coronavac | **CoronaVac** |
 
 ### Supported rapid antigen tests
 The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
 ### Supported country
-For the generation of vaccine certificates and recovery certificates only Switzerland (**CH**) can be used for **countryOfVaccination** respectively **countryOfTest**. For negative-test certificates, there are no restrictions on the country of test **countryOfTest**. The accepted values are those proposed by the standard **ISO 3166-1 alpha 2**.
+Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 
-For the generation of antibody certificates, the country can't be choosed, since this certificate is only valid in Switzerland (not yet part of the EU-DigitalCovidCertificate).
+Exceptions:
+| type                     | description|
+|--------------------------|--------------------|
+| recovery                 | **countryOfTest**: only Switzerland (**CH**) |
+| vaccintion-tourist       | **countryOfVaccination**: all countries from the accepted value-set except Switzerland  (**CH**) |
+| antibody                 | The country can't be choosed, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates (not yet part of the EU-DigitalCovidCertificate). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
