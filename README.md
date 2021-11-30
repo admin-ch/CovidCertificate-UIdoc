@@ -13,6 +13,7 @@ https://www.covidcertificate-a.admin.ch/
   * [Delivery methods](#delivery-methods)
   * [Templates](#templates)
   * [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
+    + [Supported encoding for familyName and givenName](#supported-encoding-for-familyname-and-givenname)
     + [Supported date format for all dates](#supported-date-format-for-all-dates)
     + [Supported date format for birthdates only](#supported-date-format-for-birthdates-only)
     + [Supported vaccine (vaccination certificate)](#supported-vaccine-vaccination-certificate)
@@ -118,7 +119,7 @@ We recommend Microsoft Excel to edit the template.
 
 ### Supported encoding for familyName and givenName
 UTF-8 | ISO-8859-1 is used for the familyName and givenName except the following characters:
-
+"!", "@", "#", "$", "%", "¶", "*", "(", ")", "_", ":", "/", "+", "=", "|", "<", ">", "?", "{", "}", "[", "]", "~"
 
 ### Supported date format for all dates
 It is not possible to mix formats, only one of the following formats must be used in a document:
