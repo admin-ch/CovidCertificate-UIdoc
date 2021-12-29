@@ -31,12 +31,13 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Five (5) types of certificate can be created:
+Six (6) types of certificate can be created:
 - vaccination
 - vaccination-tourist
 - test
 - recovery
 - antibody
+- exceptional
 
 ## Delivery methods
 Three (3) types of delivery method can be used:
@@ -102,6 +103,12 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody.xlsx">template-cc_antibody</a></td>
+</tr>
+ <tr>
+<td>&nbsp;exceptional</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional-delivery_post.xlsx">template-cc_exceptional-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional-delivery_appTransfer.xlsx">template-cc_exceptional-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional.xlsx">template-cc_exceptional</a></td>
 </tr>
 </tbody>
 </table>
