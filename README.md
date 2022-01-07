@@ -168,12 +168,12 @@ The application supports a dedicated list of rapid antigen tests. **manufacturer
 Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | type                     | description|
 |--------------------------|--------------------|
-| vaccination                 | **countryOfVaccination**: all countries |
+| vaccination              | **countryOfVaccination**: all countries |
 | vaccintion-tourist       | **countryOfVaccination**: all countries except Switzerland  (**CH**) |
-| test                 | **memberStateOfTest**: all countries |
+| test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
-| antibody                 | The country can't be choosed, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
-| exceptional                 | The country can't be choosed, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
+| antibody                 | The country can't be choosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
+| exceptional              | The country can't be choosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
