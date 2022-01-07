@@ -172,8 +172,8 @@ Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | vaccintion-tourist       | **countryOfVaccination**: all countries except Switzerland  (**CH**) |
 | test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
-| antibody                 | The country can't be choosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
-| exceptional              | The country can't be choosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
+| antibody                 | The country can't be chosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
+| exceptional              | The country can't be chosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
