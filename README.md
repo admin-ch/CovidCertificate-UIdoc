@@ -83,8 +83,8 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
   <tr>
 <td>&nbsp;vaccination-tourist</td>
 <td>&nbsp;not available</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
 </tr>
 <tr>
 <td>&nbsp;test</td>
@@ -168,11 +168,12 @@ The application supports a dedicated list of rapid antigen tests. **manufacturer
 Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | type                     | description|
 |--------------------------|--------------------|
-| vaccination                 | **countryOfVaccination**: all countries |
+| vaccination              | **countryOfVaccination**: all countries |
 | vaccintion-tourist       | **countryOfVaccination**: all countries except Switzerland  (**CH**) |
-| test                 | **memberStateOfTest**: all countries |
+| test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
-| antibody                 | The country can't be chosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
+| antibody                 | The country can't be choosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
+| exceptional              | The country can't be choosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
