@@ -83,8 +83,8 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
   <tr>
 <td>&nbsp;vaccination-tourist</td>
 <td>&nbsp;not available</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
 </tr>
 <tr>
 <td>&nbsp;test</td>
