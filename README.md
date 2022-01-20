@@ -31,7 +31,7 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Six (7) types of certificate can be created:
+Seven (7) types of certificate can be created:
 - vaccination
 - vaccination-tourist
 - test
