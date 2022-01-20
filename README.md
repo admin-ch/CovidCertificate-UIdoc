@@ -31,11 +31,12 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Six (6) types of certificate can be created:
+Six (7) types of certificate can be created:
 - vaccination
 - vaccination-tourist
 - test
 - recovery
+- recovery-rat (rapid antigen test)
 - antibody
 - exceptional
 
@@ -97,6 +98,12 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
+</tr>
+ <tr>
+<td>&nbsp;recovery-rat</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
 </tr>
 <tr>
 <td>&nbsp;antibody</td>
