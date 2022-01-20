@@ -167,7 +167,20 @@ The *medicinalProductCode* has to be one one of the following code:
 | BBIBP-CorV (Vero Cells) / China Sinopharm International Corp. - Beijing location           | **BBIBP-CorV** |
 | Covaxin (also known as BBV152 A, B, C) / Bharat Biotech | **Covaxin** |
 | COVID-19 Vaccine (Vero Cell), Inactivated/ Coronavac | **CoronaVac** |
-
+---
+**Important**
+Information on the vaccine doses received (X) and required (Y) must be entered in accordance with one of the following rules:
+- Last dose of a 2-dose vaccine (e.g. mRNA) without prior infection:
+  - 1/2: Incomplete vaccination (not usable for travel or areas subject to certification)
+  - 2/2: Full vaccination (initial immunisation)
+  - 3/3, 4/4, ...: Booster
+- Last dose of a 2-dose vaccine (e.g. mRNA) after prior infection (“required doses”: Y must always be 1):
+  - 1/1: Full vaccination after recovery
+  - 2/1, 3/1, 4/1, ...: Booster after recovery
+- Last dose of a 1-dose vaccine (e.g. Janssen) without prior infection:
+  - 1/1: Full vaccination
+  - 2/1: Booster
+---
 ### Supported rapid antigen tests
 The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
