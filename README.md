@@ -31,25 +31,24 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Seven (7) types of certificate can be created:
+Six (6) types of certificate can be created with the bulk method (CSV upload):
 - vaccination
 - vaccination-tourist
 - test
 - recovery
 - recovery-rat (rapid antigen test)
 - antibody
-- exceptional
 
 ## Delivery methods
 Three (3) types of delivery method can be used:
 - sent per post
-  - **only** available for **vaccination certificates**, **recovery certificates** and  **antibody certificates**
+  - **only** available for **vaccination certificates**, **recovery certificates**, **recovery-rat certificates** and  **antibody certificates**
   - the certificates will be printed and sent per post
     - the patient [address](
       https://github.com/admin-ch/CovidCertificate-Apidoc#address-data
       ) is required
     - only available for addresses in Switzerland
-  - certificates in PDF format will be compressed in a ZIP file and downloaded
+  - certificates in PDF format will be compressed in a ZIP archive and downloaded
 - transfer to the mobile app
   - available for all certificate types
   - the certificate is delivered directly in the mobile application (minimum v. 2.2.0) of the patient
@@ -57,10 +56,10 @@ Three (3) types of delivery method can be used:
     - *inAppDeliveryCode* can be generated in the mobile application (min. v. 2.2.0)
     - app tranfer code expire 7 days after generation of the code
     - only one certificate is delivered per app transfer code
-  - certificates in PDF format will be compressed in a ZIP file and downloaded
+  - certificates in PDF format will be compressed in a ZIP archive and downloaded
 - PDF only
   - available for all certificate types
-  - certificates in PDF format will be compressed in a ZIP file and downloaded
+  - certificates in PDF format will be compressed in a ZIP archive and downloaded
 
 The specifications regarding the field values of the CSV are the same as for the API. Use the [API documentation](
 https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
@@ -110,12 +109,6 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody.xlsx">template-cc_antibody</a></td>
-</tr>
- <tr>
-<td>&nbsp;exceptional</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional-delivery_post.xlsx">template-cc_exceptional-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional-delivery_appTransfer.xlsx">template-cc_exceptional-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_exceptional.xlsx">template-cc_exceptional</a></td>
 </tr>
 </tbody>
 </table>
