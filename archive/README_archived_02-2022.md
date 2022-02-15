@@ -1,4 +1,9 @@
 # Web Management UI documentation
+
+## :warning: This version is archived and no longer represents the current functionality. :warning:
+
+---
+
 Documentation for the Web management UI ([prod](
 https://www.covidcertificate.admin.ch/
 ) - [test](
@@ -31,10 +36,13 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Three (3) types of certificate can be created with the bulk method (CSV upload):
+Six (6) types of certificate can be created with the bulk method (CSV upload):
 - vaccination
+- vaccination-tourist
 - test
 - recovery
+- recovery-rat (rapid antigen test)
+- antibody
 
 ## Delivery methods
 Three (3) types of delivery method can be used:
@@ -77,6 +85,12 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
 </tr>
+  <tr>
+<td>&nbsp;vaccination-tourist</td>
+<td>&nbsp;not available</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
+</tr>
 <tr>
 <td>&nbsp;test</td>
 <td>&nbsp;not available</td>
@@ -88,6 +102,18 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
+</tr>
+ <tr>
+<td>&nbsp;recovery-rat</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
+</tr>
+<tr>
+<td>&nbsp;antibody</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody.xlsx">template-cc_antibody</a></td>
 </tr>
 </tbody>
 </table>
@@ -133,6 +159,12 @@ The *medicinalProductCode* has to be one one of the following code:
 | Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** |
 | Vaxzevria / AstraZeneca AB          | **EU/1/21/1529** |
 
+#### Vaccination-tourist certificate
+| description (productName / productManufacturer)                                                  | medicinalProductCode         |
+|--------------------------------------------------------------|--------------|
+| BBIBP-CorV (Vero Cells) / China Sinopharm International Corp. - Beijing location           | **BBIBP-CorV** |
+| Covaxin (also known as BBV152 A, B, C) / Bharat Biotech | **Covaxin** |
+| COVID-19 Vaccine (Vero Cell), Inactivated/ Coronavac | **CoronaVac** |
 ---
 **Important**
 Information on the vaccine doses received (X) and required (Y) must be entered in accordance with one of the following rules:
@@ -147,15 +179,20 @@ Information on the vaccine doses received (X) and required (Y) must be entered i
   - 1/1: Full vaccination
   - 2/1: Booster
 ---
+### Supported rapid antigen tests
+The application supports a dedicated list of rapid antigen tests. **manufacturerCode** and **typeCode** can be found [here](https://github.com/admin-ch/CovidCertificate-Examples/blob/main/cumulated/covid-19-tests_1.0.0.json) (use only those where property ch_accepted = true). Issuable tests can be found in [supported rapid antigen tests](https://corona-fachinformationen.bagapps.ch/documents/sars-cov-2-antigen-schnelltests-fachanwendung-mit-covid-zertifikat.pdf).
 
 ### Supported country
 Accepted value-set: **ISO 3166-1 Alpha-2 Code**
-
 | type                     | description|
 |--------------------------|--------------------|
 | vaccination              | **countryOfVaccination**: all countries |
+| vaccintion-tourist       | **countryOfVaccination**: all countries except Switzerland  (**CH**) |
 | test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
+| recovery-rat             | **memberStateOfTest**: only Switzerland (**CH**) |
+| antibody                 | The country can't be chosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
+| exceptional              | The country can't be chosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
