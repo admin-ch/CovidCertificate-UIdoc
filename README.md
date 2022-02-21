@@ -39,6 +39,18 @@ Six (6) types of certificate can be created with the bulk method (CSV upload):
 - recovery-rat (rapid antigen test)
 - antibody
 
+The issuing of certificates according to type can be toggled according to the decision of the Federal Office of Public Health (FOPH).
+Consequently, the API endpoints and options in the UI will be enabled/disabled. The table below shows the certificates that can currently be generated. For more information, please contact support @ covid-zertifikat@bag.admin.ch.
+
+| Certificate type      | State |
+| ----------- | ----------- |
+| Vaccination      | enabled       |
+| Vaccination for tourists | disabled        |
+| Test (based on negative PCR or Rapid Antigen Test)   | enabled        |
+| Recovery (based on positive PCR test)   | enabled        |
+| Recovery (based on positive Rapid Antigen Test)   | disabled        |
+| Recovery (based on antibody test)   | disabled        |
+
 ## Delivery methods
 Three (3) types of delivery method can be used:
 - sent per post
