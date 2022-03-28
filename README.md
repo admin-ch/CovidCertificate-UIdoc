@@ -95,8 +95,8 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
   <tr>
 <td>&nbsp;vaccination-tourist</td>
 <td>&nbsp;not available</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
 </tr>
 <tr>
 <td>&nbsp;test</td>
@@ -112,15 +112,15 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 </tr>
  <tr>
 <td>&nbsp;recovery-rat</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
 </tr>
 <tr>
 <td>&nbsp;antibody</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_antibody.xlsx">template-cc_antibody</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody.xlsx">template-cc_antibody</a></td>
 </tr>
 </tbody>
 </table>
