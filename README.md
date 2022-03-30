@@ -31,13 +31,10 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Six (6) types of certificate can be created with the bulk method (CSV upload):
+Six (3) types of certificate can be created with the bulk method (CSV upload):
 - vaccination
-- vaccination-tourist
 - test
 - recovery
-- recovery-rat (rapid antigen test)
-- antibody
 
 The issuing of certificates according to type can be toggled according to the decision of the Federal Office of Public Health (FOPH).
 Consequently, the API endpoints and options in the UI will be enabled/disabled. The table below shows the certificates that can currently be generated. For more information, please contact support @ covid-zertifikat@bag.admin.ch.
@@ -177,12 +174,8 @@ Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | type                     | description|
 |--------------------------|--------------------|
 | vaccination              | **countryOfVaccination**: all countries |
-| vaccintion-tourist       | **countryOfVaccination**: all countries except Switzerland  (**CH**) |
 | test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
-| recovery-rat             | **memberStateOfTest**: only Switzerland (**CH**) |
-| antibody                 | The country can't be chosen, since only serological tests from Swiss laboratories can be accepted as evidence for the elaboration of antibody certificates, thus, the default country is Switzerland (**CH**). |
-| exceptional              | The country can't be chosen, since this certificate is only valid in Switzerland, thus, the default country is Switzerland (**CH**). |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
