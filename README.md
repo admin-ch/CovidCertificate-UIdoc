@@ -92,12 +92,6 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination-delivery_appTransfer.xlsx">template-cc_vaccination-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_vaccination.xlsx">template-cc_vaccination</a></td>
 </tr>
-  <tr>
-<td>&nbsp;vaccination-tourist</td>
-<td>&nbsp;not available</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_vaccination_tourist-delivery_appTransfer.xlsx">template-cc_vaccination_tourist-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_vaccination_tourist.xlsx">template-cc_vaccination_tourist</a></td>
-</tr>
 <tr>
 <td>&nbsp;test</td>
 <td>&nbsp;not available</td>
@@ -109,18 +103,6 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
-</tr>
- <tr>
-<td>&nbsp;recovery-rat</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
-</tr>
-<tr>
-<td>&nbsp;antibody</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody-delivery_post.xlsx">template-cc_antibody-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody-delivery_appTransfer.xlsx">template-cc_antibody-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_antibody.xlsx">template-cc_antibody</a></td>
 </tr>
 </tbody>
 </table>
@@ -191,6 +173,7 @@ The application supports a dedicated list of rapid antigen tests. **manufacturer
 
 ### Supported country
 Accepted value-set: **ISO 3166-1 Alpha-2 Code**
+
 | type                     | description|
 |--------------------------|--------------------|
 | vaccination              | **countryOfVaccination**: all countries |
