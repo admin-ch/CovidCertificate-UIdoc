@@ -31,22 +31,26 @@ https://github.com/admin-ch/CovidCertificate-Api-Scripts
 ).
 
 ## Certificate types
-Six (3) types of certificate can be created with the bulk method (CSV upload):
+Four (4) types of certificate can be created with the bulk method (CSV upload):
 - vaccination
 - test
 - recovery
+- recovery-rat (rapid antigen test)
 
 The issuing of certificates according to type can be toggled according to the decision of the Federal Office of Public Health (FOPH).
 Consequently, the API endpoints and options in the UI will be enabled/disabled. The table below shows the certificates that can currently be generated. For more information, please contact support @ covid-zertifikat@bag.admin.ch.
 
 | Certificate type      | State |
 | ----------- | ----------- |
-| Vaccination      | enabled       |
-| Vaccination for tourists | disabled        |
-| Test (based on negative PCR or Rapid Antigen Test)   | enabled        |
-| Recovery (based on positive PCR test)   | enabled        |
-| Recovery (based on positive Rapid Antigen Test)   | disabled        |
-| Recovery (based on antibody test)   | disabled        |
+| Vaccination      | :heavy_check_mark:       |
+| Vaccination for tourists | :no_entry:        |
+| Test (based on negative PCR or Rapid Antigen Test)   | :heavy_check_mark:        |
+| Recovery (based on positive PCR test)   | :heavy_check_mark:        |
+| Recovery (based on positive Rapid Antigen Test)   | :heavy_check_mark:        |
+| Recovery (based on antibody test)   | :no_entry:        |
+
+:heavy_check_mark:: the certificate and its corresponding endpoints are active  
+:no_entry:: the certificate and its corresponding endpoints are no longer active
 
 ## Delivery methods
 Three (3) types of delivery method can be used:
@@ -100,6 +104,12 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_post.xlsx">template-cc_recovery-delivery_post</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-delivery_appTransfer.xlsx">template-cc_recovery-delivery_appTransfer</a></td>
 <td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery.xlsx">template-cc_recovery</a></td>
+</tr>
+<tr>
+<td>&nbsp;recovery-rat</td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
 </tr>
 </tbody>
 </table>
