@@ -154,13 +154,6 @@ The *medicinalProductCode* has to be one one of the following code:
 | other AstraZeneca vaccines: COVISHIELD / AZD1222 / ChAdOx1 nCoV-19/ChAdOx1-S/… / Serum Institute Of India Private Limited    | **Covishield** |
 | Spikevax (previously COVID-19 Vaccine Moderna) / Moderna Biotech Spain S.L.           | **EU/1/20/1507** |
 | Vaxzevria / AstraZeneca AB          | **EU/1/21/1529** |
-
-#### Vaccination-tourist certificate
-| description (productName / productManufacturer)                                                  | medicinalProductCode         |
-|--------------------------------------------------------------|--------------|
-| BBIBP-CorV (Vero Cells) / China Sinopharm International Corp. - Beijing location           | **BBIBP-CorV** |
-| Covaxin (also known as BBV152 A, B, C) / Bharat Biotech | **Covaxin** |
-| COVID-19 Vaccine (Vero Cell), Inactivated/ Coronavac | **CoronaVac** |
 ---
 **Important**
 Information on the vaccine doses received (X) and required (Y) must be entered in accordance with one of the following rules:
@@ -186,6 +179,7 @@ Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | vaccination              | **countryOfVaccination**: all countries |
 | test                     | **memberStateOfTest**: all countries |
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
+| recovery-rat             | **memberStateOfTest**: only Switzerland (**CH**) |
 
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
