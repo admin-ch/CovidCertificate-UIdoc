@@ -107,9 +107,9 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 </tr>
 <tr>
 <td>&nbsp;recovery-rat</td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
-<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/archive/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_post.xlsx">template-cc_recovery-rat-delivery_post</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat-delivery_appTransfer.xlsx">template-cc_recovery-rat-delivery_appTransfer</a></td>
+<td>&nbsp;<a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-cc_recovery-rat.xlsx">template-cc_recovery-rat</a></td>
 </tr>
 </tbody>
 </table>
