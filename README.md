@@ -63,7 +63,7 @@ Three (3) types of delivery method can be used:
   - the certificate is delivered directly in the mobile application (minimum v. 2.2.0) of the patient
   - the patient has to provide an app transfer code
     - *inAppDeliveryCode* can be generated in the mobile application (min. v. 2.2.0)
-    - app tranfer code expire 7 days after generation of the code
+    - app tranfer code expire 30 days after generation of the code
     - only one certificate is delivered per app transfer code
   - certificates in PDF format will be compressed in a ZIP archive and downloaded
 - PDF only
