@@ -19,7 +19,7 @@ https://www.covidcertificate-a.admin.ch/
     + [Supported vaccine (vaccination certificate)](#supported-vaccine-vaccination-certificate)
     + [Supported rapid antigen tests (test certificate)](#supported-rapid-antigen-tests)
     + [Supported country](#supported-country)
-- [Troubleshooting](#troubleshooting)
+  * [Troubleshooting](#troubleshooting)
 - [How to revoke multiple COVID certificates ?](#how-to-revoke-multiple-covid-certificates-)
 
 # How to generate multiple COVID certificates ?
@@ -182,7 +182,7 @@ Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 | recovery                 | **countryOfTest**: only Switzerland (**CH**) |
 | recovery-rat             | **memberStateOfTest**: only Switzerland (**CH**) |
 
-# Troubleshooting
+## Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
 In this case, fix the errors in the CSV file according to the error description in the returned file.
 
