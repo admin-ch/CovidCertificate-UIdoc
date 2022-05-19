@@ -20,6 +20,7 @@ https://www.covidcertificate-a.admin.ch/
     + [Supported rapid antigen tests (test certificate)](#supported-rapid-antigen-tests)
     + [Supported country](#supported-country)
 - [Troubleshooting](#troubleshooting)
+- [How to revoke multiple COVID certificates ?](#how-to-revoke-multiple-covid-certificates-)
 
 # How to generate multiple COVID certificates ?
 ## General informations
@@ -184,3 +185,6 @@ Accepted value-set: **ISO 3166-1 Alpha-2 Code**
 # Troubleshooting
 If the imported CSV file can't be processed because of an error, then an error file will be sent back and no COVID certificates will be produced and delivered.
 In this case, fix the errors in the CSV file according to the error description in the returned file.
+
+# How to revoke multiple COVID certificates ?
+The **Revoke multiple certificates** function allows you to revoke several certificates by importing a CSV file. The import file can be produced using the <a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-bulk-revocation.csv">template-bulk-revocation.csv</a> template.
