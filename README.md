@@ -12,7 +12,6 @@ https://www.covidcertificate-a.admin.ch/
   * [Certificate types](#certificate-types)
   * [Delivery methods](#delivery-methods)
   * [Templates](#templates)
-  * [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
     + [Supported encoding for familyName and givenName](#supported-encoding-for-familyname-and-givenname)
     + [Supported date format for all dates](#supported-date-format-for-all-dates)
     + [Supported date format for birthdates only](#supported-date-format-for-birthdates-only)
@@ -21,6 +20,7 @@ https://www.covidcertificate-a.admin.ch/
     + [Supported country](#supported-country)
   * [Troubleshooting](#troubleshooting)
 - [How to revoke multiple COVID certificates ?](#how-to-revoke-multiple-covid-certificates-)
+- [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
 
 # How to generate multiple COVID certificates ?
 ## General informations
@@ -115,17 +115,6 @@ https://github.com/admin-ch/CovidCertificate-Apidoc#request---certificate-data
 </tbody>
 </table>
 
-## Create a CSV with Microsoft Excel
-
-We recommend Microsoft Excel to edit the template.
-1. Open the template with Microsoft Excel.
-2. Fill the cells under the titled column with the respectives informations of your patients.
-3. Generate the CSV:
- - Windows: ***File*** -> ***Save As*** -> ***Browse*** -> ***Save as type: CSV (Comma delimited)***
- - Mac: ***File*** -> ***Save As...*** -> ***File Format: CSV UTF-8 (Comma-delimited (.csv)***
-
-⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
-
 ### Supported encoding for familyName and givenName
 UTF-8 | ISO-8859-1 is used for the familyName and givenName except the following characters:  
 "!", "@", "#", "$", "%", "¶", "*", "(", ")", "_", ":", "/", "+", "=", "|", "<", ">", "?", "{", "}", "[", "]", "~"
@@ -187,4 +176,15 @@ If the imported CSV file can't be processed because of an error, then an error f
 In this case, fix the errors in the CSV file according to the error description in the returned file.
 
 # How to revoke multiple COVID certificates ?
-The **Revoke multiple certificates** function allows you to revoke several certificates by importing a CSV file. The import file can be produced using the <a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-bulk-revocation.csv">template-bulk-revocation.csv</a> template.
+The **Revoke multiple certificates** function allows you to revoke several certificates by importing a CSV file. The import file can be produced using the <a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-bulk_revocation.xlsx">template-bulk_revocation.xlsx</a> template.
+
+# Create a CSV with Microsoft Excel
+
+We recommend Microsoft Excel to edit the template.
+1. Open the template with Microsoft Excel.
+2. Fill the cells under the titled column with the respectives informations of your patients.
+3. Generate the CSV:
+ - Windows: ***File*** -> ***Save As*** -> ***Browse*** -> ***Save as type: CSV (Comma delimited)***
+ - Mac: ***File*** -> ***Save As...*** -> ***File Format: CSV UTF-8 (Comma-delimited (.csv)***
+
+⚠️ It is possible that when you edit the file with Excel, the date formats are modified. Please note that the date format must follow the specification. You can open the csv file with a text editor in order to check that everything is ok.
