@@ -20,6 +20,8 @@ https://www.covidcertificate-a.admin.ch/
     + [Supported country](#supported-country)
   * [Troubleshooting](#troubleshooting)
 - [How to revoke multiple COVID certificates ?](#how-to-revoke-multiple-covid-certificates-)
+    + [Supported format for uvci](#supported-format-for-uvci)
+    + [Supported values for fraud](#supported-values-for-fraud)
 - [Create a CSV with Microsoft Excel](#create-a-csv-with-microsoft-excel)
 
 # How to generate multiple COVID certificates ?
@@ -177,6 +179,15 @@ In this case, fix the errors in the CSV file according to the error description 
 
 # How to revoke multiple COVID certificates ?
 The **Revoke multiple certificates** function allows you to revoke several certificates by importing a CSV file. The import file can be produced using the <a href="https://github.com/admin-ch/CovidCertificate-UIdoc/blob/main/template-bulk_revocation.xlsx">template-bulk_revocation.xlsx</a> template.
+
+### Supported format for uvci
+Description: UVCI is the certificate unique identifier.  
+Regex: ^urn:uvci:01:CH:[A-Z0-9]{24}$  
+Explanation: The **uvci** must start with 'urn:uvci:01:CH:' and is followed by 24 alpha-numeric characters (A to Z and 0 to 9)
+
+### Supported values for fraud
+Description: Determine if the certificate to be revoked has been fraudulently issued (set **true** if so).  
+Values: [**true**, **false**]
 
 # Create a CSV with Microsoft Excel
 
